@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		A8F61F9B247069CE0018D905 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F61F9A247069CE0018D905 /* AppDelegate.swift */; };
 		A8F61F9D247069CE0018D905 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F61F9C247069CE0018D905 /* SceneDelegate.swift */; };
-		A8F61F9F247069CE0018D905 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F61F9E247069CE0018D905 /* ViewController.swift */; };
 		A8F61FA2247069CE0018D905 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F61FA0247069CE0018D905 /* Main.storyboard */; };
 		A8F61FA4247069D40018D905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F61FA3247069D40018D905 /* Assets.xcassets */; };
 		A8F61FA7247069D40018D905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F61FA5247069D40018D905 /* LaunchScreen.storyboard */; };
+		A8F61FAF24706B4C0018D905 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F61FAE24706B4C0018D905 /* MasterViewController.swift */; };
+		A8F61FB124706C400018D905 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F61FB024706C400018D905 /* DetailViewController.swift */; };
+		A8F61FB324706C9F0018D905 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F61FB224706C9F0018D905 /* Monster.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A8F61F97247069CE0018D905 /* UISplitViewController-101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UISplitViewController-101.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F61F9A247069CE0018D905 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8F61F9C247069CE0018D905 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A8F61F9E247069CE0018D905 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A8F61FA1247069CE0018D905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8F61FA3247069D40018D905 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8F61FA6247069D40018D905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8F61FA8247069D40018D905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8F61FAE24706B4C0018D905 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		A8F61FB024706C400018D905 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A8F61FB224706C9F0018D905 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				A8F61F9A247069CE0018D905 /* AppDelegate.swift */,
 				A8F61F9C247069CE0018D905 /* SceneDelegate.swift */,
-				A8F61F9E247069CE0018D905 /* ViewController.swift */,
 				A8F61FA0247069CE0018D905 /* Main.storyboard */,
 				A8F61FA3247069D40018D905 /* Assets.xcassets */,
 				A8F61FA5247069D40018D905 /* LaunchScreen.storyboard */,
 				A8F61FA8247069D40018D905 /* Info.plist */,
+				A8F61FAE24706B4C0018D905 /* MasterViewController.swift */,
+				A8F61FB024706C400018D905 /* DetailViewController.swift */,
+				A8F61FB224706C9F0018D905 /* Monster.swift */,
 			);
 			path = "UISplitViewController-101";
 			sourceTree = "<group>";
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8F61F9F247069CE0018D905 /* ViewController.swift in Sources */,
+				A8F61FB324706C9F0018D905 /* Monster.swift in Sources */,
 				A8F61F9B247069CE0018D905 /* AppDelegate.swift in Sources */,
 				A8F61F9D247069CE0018D905 /* SceneDelegate.swift in Sources */,
+				A8F61FAF24706B4C0018D905 /* MasterViewController.swift in Sources */,
+				A8F61FB124706C400018D905 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
