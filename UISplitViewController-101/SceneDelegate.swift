@@ -17,13 +17,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard
-            let splitViewController = window?.rootViewController as? UISplitViewController,
-            let leftNavController = splitViewController.viewControllers.first as? UINavigationController,
-            let masterViewController = leftNavController.viewControllers.first as? MasterViewController,
-            let detailViewController = (splitViewController.viewControllers.last as? UINavigationController)?.topViewController as? DetailViewController else {
-            fatalError()
+        guard let tabbarController = self.window?.rootViewController as? UITabBarController else {
+            fatalError("Missing TabbarController")
         }
+
+
+        guard let splitViewController = tabbarController.viewControllers?[0] as? UISplitViewController else {
+            fatalError("Missing SplitViewController")
+        }
+
+        guard let masterNavController = splitViewController.viewControllers.first as? UINavigationController,
+            let masterViewController = masterNavController.topViewController as? MasterViewController else {
+            fatalError("Missing MasterViewController")
+        }
+
+        guard let navigationController = splitViewController.viewControllers.last as? UINavigationController,
+            let detailViewController = navigationController.topViewController as? DetailViewController else {
+            fatalError("Missing detail view controller")
+        }
+        
+        
+        
+//        guard
+//            let splitViewController = window?.rootViewController as? UISplitViewController,
+//            let leftNavController = splitViewController.viewControllers.first as? UINavigationController,
+//            let masterViewController = leftNavController.viewControllers.first as? MasterViewController,
+//            let detailViewController = (splitViewController.viewControllers.last as? UINavigationController)?.topViewController as? DetailViewController else {
+//            fatalError()
+//        }
+        
         splitViewController.delegate = masterViewController
         masterViewController.delegate = detailViewController
     }

@@ -42,6 +42,11 @@ class MasterViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         let selectedMonster = monsters[0]
         delegate?.monsterSelected(selectedMonster)
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            tableView.selectRow(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: .none)
+        }
+        
     }
 
     // MARK: - Table view data source
